@@ -1,0 +1,6 @@
+{
+  "name": "Falcon Eye Agrobotic OS - منظومة عين الصقر",
+  "description": "منظومة عين الصقر لإدارة خطوط الفرز والإنتاج والتعبئة الذكية - معمارية معيارية متعددة المحاصيل تعتمد على نواة بايثون قابلة للتوسع بموديولات مستقلة.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
