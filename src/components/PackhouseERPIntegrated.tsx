@@ -617,6 +617,7 @@ export const PackhouseERPIntegrated: React.FC<PackhouseERPProps> = ({ lang }) =>
         </button>
       </div>
 
+      <>
       {/* MODULE 1: ACCOUNTING & JOURNAL ENTRIES */}
       {activeModule === 'accounting' && (
         <div className="space-y-6">
@@ -1200,11 +1201,20 @@ export const PackhouseERPIntegrated: React.FC<PackhouseERPProps> = ({ lang }) =>
               </div>
             </div>
           </div>
+        </div>
+      )}
+        {activeModule === 'asset_mgmt' && (
+          <div className="p-6 bg-white rounded-xl shadow-inner border">
+             <AssetManagementModule lang={lang} />
+          </div>
+        )}
+
         {activeModule === 'doc_workflow' && (
           <div className="p-6 bg-white rounded-xl shadow-inner border">
              <DocumentaryWorkflowModule lang={lang} />
           </div>
         )}
-      </div>
-    );
+      </>
+    </div>
+  );
 };
